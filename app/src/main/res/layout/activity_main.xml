@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/speaker_button"
+        android:layout_width="158dp"
+        android:layout_height="150dp"
+        android:background="@drawable/speaker_icon"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+    <Button
+        android:id="@+id/phone_icon"
+        android:layout_width="104dp"
+        android:layout_height="161dp"
+        android:background="@drawable/phone_icon"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <Button
+        android:id="@+id/bottle_button"
+        android:layout_width="130dp"
+        android:layout_height="141dp"
+        android:background="@drawable/bottle_icon"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+
+    <Button
+        android:id="@+id/key_icon"
+        android:layout_width="161dp"
+        android:layout_height="128dp"
+        android:background="@drawable/key_icon"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PhotoQuiz</string>
+    <string name="key_button">Key</string>
+    <string name="bottle_button">Bottle</string>
+    <string name="phone_button">Phone</string>
+    <string name="speaker_button">speaker</string>
+    <string name="speaker_question">Speaker!</string>
+    <string name="phone_question">Phone!</string>
+    <string name="bottle_question">Bottle!</string>
+    <string name="key_question">Key!</string>
+
+</resources>
