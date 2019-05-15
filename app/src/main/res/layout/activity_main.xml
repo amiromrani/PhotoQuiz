@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="Missingconstraints">
 
     <Button
         android:id="@+id/speaker_button"
@@ -25,6 +26,7 @@
     <Button
         android:id="@+id/bottle_button"
         android:layout_width="130dp"
+
         android:layout_height="141dp"
         android:background="@drawable/bottle_icon"
         tools:layout_editor_absoluteX="268dp"
@@ -38,5 +40,13 @@
         android:background="@drawable/key_icon"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="407dp" />
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="117dp" />
 
 </android.support.constraint.ConstraintLayout>
