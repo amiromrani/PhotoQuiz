@@ -1,8 +1,10 @@
-package com.ctech.amir.photoquiz.;
+package com.ctech.amir.photoquiz;
 
-import android.widget.Button;
+
 
 public class Question {
+
+
 
     private int mTextResId;
     private boolean mAnswerTrue;
