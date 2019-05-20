@@ -33,7 +33,7 @@
 
 
     <Button
-        android:id="@+id/key_"
+        android:id="@+id/key_button"
         android:layout_width="161dp"
         android:layout_height="128dp"
         android:background="@drawable/key_icon"
