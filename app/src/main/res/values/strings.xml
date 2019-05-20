@@ -8,5 +8,7 @@
     <string name="phone_question">Phone!</string>
     <string name="bottle_question">Bottle!</string>
     <string name="key_question">Key!</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
 
 </resources>
