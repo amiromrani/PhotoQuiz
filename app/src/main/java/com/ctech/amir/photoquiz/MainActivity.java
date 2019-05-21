@@ -25,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
     private Question[] mQuestionBank = new Question[] {
 
 
-            new Question(R.string.bottle_question, true),
+            new Question(R.string.bottle_question, false),
+            new Question(R.string.key_question, false),
+            new Question(R.string.phone_question, false),
+            new Question(R.string.speaker_question, false),
     };
 
 
@@ -51,8 +54,6 @@ protected void onCreate(Bundle savedInstanceState){
         mBottleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
@@ -65,7 +66,6 @@ protected void onCreate(Bundle savedInstanceState){
         mKeyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
@@ -77,7 +77,6 @@ protected void onCreate(Bundle savedInstanceState){
         mPhoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
@@ -89,21 +88,12 @@ protected void onCreate(Bundle savedInstanceState){
         mSpeakerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
 
             }
         });
-
-
-
-
-
-
-
-
 
 
 
@@ -170,13 +160,7 @@ protected void onCreate(Bundle savedInstanceState){
         } else {
             messageResourceId = R.string.incorrect_toast;
         }
-
         // you can make fancier Toast here if you want (from previous challenge)
         Toast.makeText(this, messageResourceId, Toast.LENGTH_SHORT).show();
     }
-
-
-
-
-
 }
