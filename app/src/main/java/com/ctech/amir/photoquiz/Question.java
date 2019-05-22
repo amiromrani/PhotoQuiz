@@ -7,11 +7,11 @@ public class Question {
 
 
     private int mTextResId;
-    private boolean mAnswerTrue;
+    private int mButtonNumber;
 
-    public Question(int textResId, boolean answerTrue) {
+    public Question(int textResId, int number) {
         mTextResId = textResId;
-        mAnswerTrue = answerTrue;
+        mButtonNumber = number;
     }
 
     public int getTextResId() {
@@ -22,11 +22,8 @@ public class Question {
         mTextResId = textResId;
     }
 
-    public boolean isAnswerTrue() {
-        return mAnswerTrue;
+    public int getmButtonNumber() {
+        return mButtonNumber;
     }
 
-    public void setAnswerTrue(boolean answerTrue) {
-        mAnswerTrue = answerTrue;
-    }
 }

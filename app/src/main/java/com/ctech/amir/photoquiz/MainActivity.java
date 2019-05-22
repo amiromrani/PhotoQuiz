@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
     private Question[] mQuestionBank = new Question[] {
 
 
-            new Question(R.string.bottle_question, false),
-            new Question(R.string.key_question, false),
-            new Question(R.string.phone_question, false),
-            new Question(R.string.speaker_question, false),
+            new Question(R.string.bottle_question, 1),
+            new Question(R.string.key_question, 2),
+            new Question(R.string.phone_question, 3),
+            new Question(R.string.speaker_question, 4),
     };
 
 
@@ -57,6 +57,8 @@ protected void onCreate(Bundle savedInstanceState){
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
+                mBottleButton.setId(Ids.ID_ONE);
+
 
 
             }
@@ -69,6 +71,7 @@ protected void onCreate(Bundle savedInstanceState){
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
+                mKeyButton.setId(Ids.ID_TWO);
 
             }
         });
@@ -80,6 +83,7 @@ protected void onCreate(Bundle savedInstanceState){
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
+                mPhoneButton.setId(Ids.ID_THREE);
 
             }
         });
@@ -91,6 +95,7 @@ protected void onCreate(Bundle savedInstanceState){
                 // update the current index, but stay within the length of the array
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
+                mSpeakerButton.setId(Ids.ID_FOUR);
 
             }
         });
@@ -149,9 +154,9 @@ protected void onCreate(Bundle savedInstanceState){
 
 
     // check whether the button clicked matches the answer in the resource
-    private void checkAnswer(boolean userPressedTrue) {
+    private void checkAnswer(int userPressedTrue) {
 
-        boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
+        int answerIsTrue = mQuestionBank[mCurrentIndex].getmButtonNumber();
 
         int messageResourceId = 0;
 
