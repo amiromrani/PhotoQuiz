@@ -55,11 +55,10 @@ protected void onCreate(Bundle savedInstanceState){
             @Override
             public void onClick(View v) {
                 // update the current index, but stay within the length of the array
+                checkAnswer(1);
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
                 mBottleButton.setId(Ids.ID_ONE);
-
-
 
             }
         });
@@ -68,7 +67,7 @@ protected void onCreate(Bundle savedInstanceState){
         mKeyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // update the current index, but stay within the length of the array
+                checkAnswer(2);
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
                 mKeyButton.setId(Ids.ID_TWO);
@@ -80,7 +79,7 @@ protected void onCreate(Bundle savedInstanceState){
         mPhoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // update the current index, but stay within the length of the array
+                checkAnswer(3);
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
                 mPhoneButton.setId(Ids.ID_THREE);
@@ -92,7 +91,7 @@ protected void onCreate(Bundle savedInstanceState){
         mSpeakerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // update the current index, but stay within the length of the array
+                checkAnswer(4);
                 mCurrentIndex = (mCurrentIndex + 1) % mQuestionBank.length;
                 updateQuestion();
                 mSpeakerButton.setId(Ids.ID_FOUR);
@@ -149,12 +148,15 @@ protected void onCreate(Bundle savedInstanceState){
         Log.d(TAG, "updating question text", new Exception());
         int questionResourceId = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(questionResourceId);
-    }
+        }
+
 
 
 
     // check whether the button clicked matches the answer in the resource
     private void checkAnswer(int userPressedTrue) {
+
+
 
         int answerIsTrue = mQuestionBank[mCurrentIndex].getmButtonNumber();
 
